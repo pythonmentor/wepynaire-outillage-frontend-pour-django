@@ -1,0 +1,26 @@
+{% load django_vite static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Index</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  {% vite_hmr_client %}
+  {% vite_asset 'src/application/app.js' %}
+</head>
+<body class="min-h-full">
+
+<div class="bg-gray-100 py-5" data-jumbotron>
+  <div class="container mx-auto px-4 py-10">
+    <h1 class="text-4xl font-bold leading-tight">Welcome to Our Website</h1>
+    <p class="mt-4 text-lg">This is a hero section built using Tailwind CSS.</p>
+    <button class="bg-placepython hover:bg-amber-700 text-white font-bold py-2 px-4 mt-6 rounded-lg">Get Started</button>
+    <div class="flex justify-center">
+      <img src="{% static 'vendors/images/webpack.png' %}"/>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

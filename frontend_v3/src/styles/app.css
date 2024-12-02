@@ -1,0 +1,9 @@
+@import "tailwindcss/base.css";
+@import "tailwindcss/components.css";
+@import "tailwindcss/utilities.css";
+
+@layer base {
+    h1 {
+        @apply text-amber-600;
+    }
+}
